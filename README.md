@@ -2,36 +2,36 @@
 
 A deep learning project to classify news articles as real or fake based on their headlines. This repository contains the code and resources for building and evaluating several Recurrent Neural Network (RNN) models, including LSTM, Bidirectional LSTM, and GRU, for text classification.
 
-#🎯 Project Overview
+# 🎯 Project Overview
 
 The spread of misinformation is a significant challenge in the digital age. This project aims to tackle this issue by creating a robust classifier that can distinguish between legitimate and fabricated news headlines. The models are trained on the "Fake and Real News Dataset" from Kaggle and achieve an accuracy of approximately 96% in identifying fake news.
 
-#💾 Dataset
+# 💾 Dataset
 
 The project utilizes the Fake and Real News Dataset sourced from Kaggle.
 
-###Source:
+### Source:
 Kaggle Fake and Real News Dataset
 
-###Content:
+### Content:
 The dataset consists of two CSV files:
 
-###True.csv:
+### True.csv:
 Contains over 21,000 real news articles.
 
-###Fake.csv:
+### Fake.csv:
 Contains over 23,000 fake news articles.
 
-###Features:
+### Features:
 Each article includes a title, text, subject, and date. For this project, only the title is used for classification.
 
-#⚙️ Project Workflow
+# ⚙️ Project Workflow
 
 The project follows a standard machine learning pipeline:
 
 Data Loading & Integration: The Fake.csv and True.csv files are loaded into Pandas DataFrames. A label column is added (0 for real news, 1 for fake news), and the datasets are merged.
 
-##Data Cleaning:
+## Data Cleaning:
 
 The combined dataset is shuffled to ensure random distribution.
 
@@ -49,7 +49,7 @@ Removal of common English stopwords (e.g., "the", "a", "is").
 
 Stemming using NLTK's PorterStemmer to reduce words to their root form (e.g., "committing" -> "commit").
 
-##Vectorization:
+## Vectorization:
 
 Tokenization: The preprocessed text corpus is converted into sequences of integers using tf.keras.preprocessing.text.Tokenizer.
 
@@ -65,30 +65,30 @@ A Bidirectional GRU network.
 
 Evaluation: The models are evaluated on a held-out test set using accuracy, confusion matrix, and a detailed classification report (precision, recall, F1-score).
 
-#📊 Models and Results
+# 📊 Models and Results
 
 Three deep learning models were implemented to compare their performance on the classification task. All models demonstrated high accuracy.
 
-#Model	Accuracy
+# Model	Accuracy
 
 LSTM	95.77%
 Bidirectional LSTM	95.83%
 Bidirectional GRU	95.82%
 
 
-#🛠️ Technologies Used
+# 🛠️ Technologies Used
 
-###Programming Language:
+### Programming Language:
 Python 3
 
-###Libraries:
+### Libraries:
 TensorFlow & Keras, Scikit-learn, Pandas, NumPy, NLTK (Natural Language Toolkit), Matplotlib (for visualization, if added)
 
-#🚀 How to Run this Project
+# 🚀 How to Run this Project
 
 To replicate this project on your local machine, follow these steps:
 
-###Clone the repository:
+### Clone the repository:
 
 Bash
 
@@ -104,7 +104,7 @@ Install the required libraries:
 pip install -r requirements.txt
 (Note: You can create a requirements.txt file by running pip freeze > requirements.txt in your project's environment.)
 
-###Set up Kaggle API Credentials:
+### Set up Kaggle API Credentials:
 
 Download your kaggle.json API token from your Kaggle account page.
 
