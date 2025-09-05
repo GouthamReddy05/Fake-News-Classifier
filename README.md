@@ -1,4 +1,4 @@
-#Fake News Classifier 📰
+# Fake News Classifier 📰
 
 A deep learning project to classify news articles as real or fake based on their headlines. This repository contains the code and resources for building and evaluating several Recurrent Neural Network (RNN) models, including LSTM, Bidirectional LSTM, and GRU, for text classification.
 
